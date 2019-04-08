@@ -8,6 +8,7 @@
        │       └── Base64Util              //图片数据转base64编码工具类       
        │       └── LZWEncoder              //图片处理所需工具类代码
        │       └── NeuQuant                //图片处理所需工具类代码
+       │       └── RotateImageUtil         //图片旋转工具类代码
        ├── zoom   
        └──     └── ImageHelper             //图片缩放工具类代码 
 ```
@@ -25,3 +26,19 @@ public class Sample {
 	}
 }
 ```
+
+### 图片旋转示例代码
+```
+public class RotateSample {
+    public static void main(String[] args) throws  Exception {
+        long start = System.currentTimeMillis();
+        BufferedImage src = ImageIO.read(new File("E:\\testimg\\glassess.png"));//原图片本地路径
+        BufferedImage des = RotateImageUtil.rotateImage(src,20);//旋转的角度
+        ImageIO.write(des, "png", new File("E:\\testimg\\glassess2.png"));//旋转后保存的图片
+        long end = System.currentTimeMillis();
+        System.out.println("开始时间:" + start+ "; 结束时间:" + end+ "; 总共用时:" + (end - start) + "(ms)");
+    }
+}
+```
+
+

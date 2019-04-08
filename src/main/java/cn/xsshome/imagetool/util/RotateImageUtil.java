@@ -16,20 +16,6 @@ public class RotateImageUtil {
     //全角度
     private static final int FULL_ANAGEL = 360;
     /**
-     * 示例代码
-     * @param args
-     * @throws Exception
-     */
-    public static void main(String[] args) throws  Exception {
-        long start = System.currentTimeMillis();
-        BufferedImage src = ImageIO.read(new File("E:\\testimg\\glassess.png"));
-        BufferedImage des = rotateImage(src,20);
-        ImageIO.write(des, "png", new File("E:\\testimg\\glassess2.png"));
-        long end = System.currentTimeMillis();
-        System.out.println("开始时间:" + start+ "; 结束时间:" + end+ "; 总共用时:" + (end - start) + "(ms)");
-    }
-
-    /**
      * 将图片进行指定角度旋转
      * @param bufferedImage 原图
      * @param angel 旋转角度
