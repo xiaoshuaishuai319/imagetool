@@ -1,11 +1,8 @@
 package cn.xsshome.imagetool.util;
 
-import cn.xsshome.imagetool.zoom.ImageHelper;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
 
 /**
  * @ClassName: MergeImageUtil
@@ -33,7 +30,7 @@ public class MergeImageUtil {
         //实现混合和透明效果
         g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP,alpha));
         //绘制图像
-        g2d.drawImage(pendantImage,x,y,pendantImageWidth,pendantImageWidth,null);
+        g2d.drawImage(pendantImage,x,y,pendantImageWidth,pendantImageHeight,null);
         return  srcImage;
     }
 }
