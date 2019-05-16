@@ -40,5 +40,16 @@ public class RotateSample {
     }
 }
 ```
+### GIF图片加文字特效示例代码
+```
+    public static void main(String[] args) throws Exception {
+        GifImageUtil gifImageUtil = new GifImageUtil();
+        String imagesavePath  = "C:\\Users\\xiaoshuai\\Desktop";//图片保存路径
+        String imagesaveName = String.valueOf(System.currentTimeMillis());//图片保存名称 不包含后缀名
+        String image  = "C:\\Users\\xiaoshuai\\Desktop\\db.gif";//原始图片
+        String result = gifImageUtil.gifAddText(imagesavePath,imagesaveName,"微软雅黑",25,Color.pink,image,"图片添加文字","测试一下","1234","4567");
+        System.out.println(result);
+    }
+```
 
 
