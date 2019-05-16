@@ -51,5 +51,9 @@ public class RotateSample {
         System.out.println(result);
     }
 ```
-
+### GIF图片加文字特效示例图
+#### 原始图
+![原始图](https://images.gitee.com/uploads/images/2019/0516/174359_5b52fe9a_131538.gif "原始图.gif")
+#### 转换图
+![转换图](https://images.gitee.com/uploads/images/2019/0516/174432_2af80fd2_131538.gif "转换图.gif")
 
