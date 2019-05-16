@@ -5,8 +5,11 @@
        │       └── ImageToChar             //图片转字符图片、文本方法  
        ├── util        
        │       └── AnimatedGifEncoder      //GIF所需工具类代码
-       │       └── Base64Util              //图片数据转base64编码工具类       
+       │       └── Base64Util              //图片数据转base64编码工具类     
+       │       └── GifDecoder              //Gif图片处理工具类代码
+       │       └── GifImageUtil            //GIF图片添加文字特效工具类代码  
        │       └── LZWEncoder              //图片处理所需工具类代码
+       │       └── MergeImageUtil          //图片特效合并工具类代码
        │       └── NeuQuant                //图片处理所需工具类代码
        │       └── RotateImageUtil         //图片旋转工具类代码
        ├── zoom   
